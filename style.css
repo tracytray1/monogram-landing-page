@@ -1,0 +1,69 @@
+html {
+  margin: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+nav {
+  background-color: #1a2456;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.navbar-brand, .nav-link {
+  color: #EFC2B3;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #ec997e !important;
+  }
+
+  &:focus {
+    color: #EFC2B3 !important;
+  }
+}
+
+.nav-link.show {
+  color: #ec997e !important;
+}
+
+img#logo{
+  height: 68px;
+}
+
+img#nav-icon {
+  height: 30px;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23EFC2B3' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.collapse.navbar-collapse, .navbar-toggler-icon {
+  justify-content: flex-end;
+}
+
+.dropdown-menu {
+  transition: all 0.5s ease-in-out;
+}
+
+.dropdown-menu.show {
+  margin-left: auto;
+  right: 0px;
+}
+
+.navbar-nocollapse{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 10px;
+}
+.navbar-nav {
+  gap: 15px;
+  padding-right: 15px;
+}
