@@ -1,32 +1,27 @@
-html {
+html, body {
   margin: auto;
   width: 100%;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 nav {
   background-color: #1a2456;
   margin: 20px;
   border-radius: 20px;
+  z-index: 1000;
 }
 
 .navbar-brand, .nav-link {
   color: #EFC2B3;
   text-transform: uppercase;
+ }
 
-  &:hover {
-    color: #ec997e !important;
-  }
+ .navbar-brand:hover, .nav-link:hover, .navbar-brand:focus,
+ .nav-link:focus, .nav-link.show {
+   color: #ec997e !important;
+ }
 
-  &:focus {
-    color: #EFC2B3 !important;
-  }
-}
-
-.nav-link.show {
-  color: #ec997e !important;
-}
 
 img#logo{
   height: 68px;
@@ -48,10 +43,6 @@ img#nav-icon {
   justify-content: flex-end;
 }
 
-.dropdown-menu {
-  transition: all 0.5s ease-in-out;
-}
-
 .dropdown-menu.show {
   margin-left: auto;
   right: 0px;
@@ -66,4 +57,35 @@ img#nav-icon {
 .navbar-nav {
   gap: 15px;
   padding-right: 15px;
+}
+
+section#hero {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/home-hero-image.jpeg");;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  color: #EFC2B3;
+  text-align: center;
+}
+
+.hero-text h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.hero-text p {
+  font-size: 30px;
+  font-weight: 200;
 }
