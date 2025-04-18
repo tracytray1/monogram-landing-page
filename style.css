@@ -87,7 +87,7 @@ section#hero {
   font-weight: 200;
 }
 
-#product-grid .container div {
+#product-grid .container {
   display: grid;
   margin-top: 30px;
   grid-template-columns: repeat(2, 2fr);
@@ -97,7 +97,7 @@ section#hero {
 
 #product-grid img {
   width: 100%;
-  height: 230px;
+  height: auto;
 }
 
 header {
@@ -108,7 +108,22 @@ header {
   z-index: 1000;
 }
 
-.slide {
-  display: none;
 
+.product-description {
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.product-stock {
+  color: rgb(191, 191, 191);
+}
+
+#shop-banner {
+  background-image: url('/images/shop-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
 }
