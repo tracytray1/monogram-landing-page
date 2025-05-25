@@ -31,12 +31,10 @@ The Monogram website presents a product-focused e-commerce interface, showcasing
 
 - ✅ Fully responsive design  
 - ✅ Product image hover swap *(JS-less using `onmouseover`)*  
-- ✅ Dynamic navigation with dropdown menu  
 - ✅ Modular product categories  
 - ✅ Sold out vs. available product indicators  
 - ✅ Clean, modern UI using Montserrat font  
 - ✅ Hero section with full background image  
-- ✅ Functional subscription form layout  
 
 ---
 
