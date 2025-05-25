@@ -242,3 +242,75 @@ footer .container{
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
+
+/* Complete solution for the Shop Now button */
+
+/* Reset the product price container */
+.product-price {
+  position: relative;
+  height: 24px;
+  /* Fixed height to prevent layout shifts */
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the price text */
+.product-price p.price {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Base style for the Shop Now button */
+.product-price button.product-cta {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  background-color: #1a2456;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  max-width: 100%;
+  /* Ensure it doesn't exceed container width */
+}
+
+/* Show button / hide price on hover */
+.product-listing:hover .product-price .price {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.product-listing:hover .product-price button.product-cta {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ensure product description maintains layout */
+.product-description {
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
+}
+
+/* Make name and price sections take appropriate space */
+.product-name {
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+/* Guarantee consistent width for price/button area */
+.product-price {
+  min-width: 90px;
+  /* Ensure enough space for the button */
+  text-align: right;
+}
