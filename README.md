@@ -17,9 +17,6 @@ The Monogram website presents a product-focused e-commerce interface, showcasing
 
 ---
 
-
----
-
 ## 🛠️ Technologies Used
 
 - **HTML5** – Structure and content  
