@@ -1,6 +1,6 @@
 # Monogram Landing Page
 
-This is a responsive front-end website project for **Monogram**, a fictional company offering customizable creative consoles for workflows in audio, video, photo, and more. The site is designed with **HTML**, **CSS**, and **Bootstrap 5**.
+This is a responsive front-end website project for **Monogram**, a company offering creative consoles for workflows in audio, video, photo, and more. The site is designed with **HTML**, **CSS**, and **Bootstrap 5** and is part of an exercise from Frontend Practice website.
 
 ---
 
